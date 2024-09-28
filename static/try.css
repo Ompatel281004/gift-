@@ -1,0 +1,81 @@
+body {
+    background-image: url('/static/WhatsApp\ Image\ 2024-09-28\ at\ 16.04.44_a73173a8.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    z-index: -1;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    border: 5px solid #a4a2a2;
+    padding: 20px;
+    margin: auto;
+    margin-top: 200px;
+    width: 500px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+form {
+    font-size: 20px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+
+.submit {
+    width: 300px;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: greenyellow;
+    color: black;
+    font-size: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit:hover {
+    background-color: limegreen;
+    transform: scale(1.05);
+}
+
+.response {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        width: 90%;
+        margin-top: 100px;
+    }
+
+    .submit {
+        width: 100%;
+    }
+}

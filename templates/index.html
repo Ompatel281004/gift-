@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gift Selection Form</title>
+    <link rel="stylesheet" href="/static/try.css">
+    
+</head>
+<body>
+    <div class="form-container">
+        <h2>Gift Selection Form</h2>
+        <form method="post">
+            <!-- Occasion Dropdown -->
+            <label for="occasion">Occasion:</label>
+            <select id="occasion" name="occasion" required>
+                <option value="birthday">Birthday</option>
+                <option value="wedding">Wedding</option>
+                <option value="anniversary">Anniversary</option>
+                <option value="graduation">Graduation</option>
+                <option value="festivals">Festivals</option>
+            </select>
+
+            <!-- Age Radio Buttons -->
+            <p>Age:</p>
+            <input type="radio" id="child" name="age" value="child">
+            <label for="child">Child</label>
+            <input type="radio" id="teen" name="age" value="teen">
+            <label for="teen">Teen</label>
+            <input type="radio" id="adult" name="age" value="adult">
+            <label for="adult">Adult</label>
+            <input type="radio" id="senior" name="age" value="senior">
+            <label for="senior">Senior</label>
+
+            <!-- Gender Radio Buttons -->
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+
+            <!-- Relationship Radio Buttons -->
+            <p>Relationship:</p>
+            <input type="radio" id="friend" name="relationship" value="friend">
+            <label for="friend">Friend</label>
+            <input type="radio" id="parent" name="relationship" value="parent">
+            <label for="parent">Parent</label>
+            <input type="radio" id="partner" name="relationship" value="partner">
+            <label for="partner">Partner</label>
+            <input type="radio" id="colleague" name="relationship" value="colleague">
+            <label for="colleague">Colleague</label><br><br>
+
+            <!-- Budget Input -->
+            <label for="budget">Budget:</label>
+            <input type="number" id="budget" name="budget" min="0" step="100" placeholder="1000" required><br><br>
+
+            <!-- User Preferences -->
+            <label for="preferences">User Preferences:</label>
+            <input type="text" id="pre" name="preferences" placeholder="Your Requirements ...."><br><br>
+            
+            <!-- Submit Button -->
+            <button  name="Submit" class="submit" type="submit">&nbsp &nbsp Submit &nbsp &nbsp</button>
+        </form>
+    </div>
+    <div class="response">
+        <h3>your response is submitted</h3>
+    </div>
+   
+</body>
+</html>
